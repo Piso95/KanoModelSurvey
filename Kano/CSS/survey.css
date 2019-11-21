@@ -1,0 +1,25 @@
+body{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    background-color: #808080 ;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+form{
+    padding: 2%;
+    display: inline-block; 
+    margin:auto;
+    border-radius:2%;
+    background-color:white;
+    width: 100%;
+}
+
+.question_block{
+    text-align: justify;
+}
+
+.question{
+    font-weight: bold;
+}
