@@ -18,7 +18,7 @@
                         activateCategory();
                     }
                 };
-                xmlhttp.open("GET","PHP/addCategory.php?name=" + name.replace(' ' , '+') + "&description=" + description.replace(' ', '+'),true);
+                xmlhttp.open("GET","PHP/addCategory.php?name=" + name.replace(' ' , '+').replace("'",'%5C%27') + "&description=" + description.replace(' ', '+').replace("'",'%5C%27'),true);
                 xmlhttp.send();
             }
             
@@ -33,7 +33,7 @@
                         activateSubcategory();
                     }
                 };
-                xmlhttp.open("GET","PHP/addSubcategory.php?name=" + name.replace(' ' , '+') + "&description=" + description.replace(' ', '+'),true);
+                xmlhttp.open("GET","PHP/addSubcategory.php?name=" + name.replace(' ' , '+').replace("'",'%5C%27') + "&description=" + description.replace(' ', '+').replace("'",'%5C%27'),true);
                 xmlhttp.send();
             }
             
@@ -48,7 +48,7 @@
                         activateLanguage();
                     }
                 };
-                xmlhttp.open("GET","PHP/addLanguage.php?acronym=" + acronym.replace(' ' , '+') + "&name=" + name.replace(' ', '+'),true);
+                xmlhttp.open("GET","PHP/addLanguage.php?acronym=" + acronym.replace(' ' , '+') + "&name=" + name.replace(' ', '+').replace("'",'%5C%27'),true);
                 xmlhttp.send();
             }
             
@@ -72,7 +72,7 @@
                 };
                 
                 
-                xmlhttp.open("GET","PHP/addQuestion.php?functional=" + functional.replace(' ' , '+') + "&disfunctional=" + disfunctional.replace(' ', '+') + "&lang=" + lang.replace(' ', '+' ) + "&cat=" + cat.replace(' ', '+') + "&subcat=" + subcat.replace(' ','+') + "&fhint=" + fhint.replace(' ','+') + "&dhint=" + dhint.replace(' ', '+'),true);
+                xmlhttp.open("GET","PHP/addQuestion.php?functional=" + functional.replace(' ' , '+').replace("'",'%5C%27') + "&disfunctional=" + disfunctional.replace(' ', '+').replace("'",'%5C%27') + "&lang=" + lang.replace(' ', '+' ).replace("'",'%5C%27') + "&cat=" + cat.replace(' ', '+').replace("'",'%5C%27') + "&subcat=" + subcat.replace(' ','+').replace("'",'%5C%27') + "&fhint=" + fhint.replace(' ','+').replace("'",'%5C%27') + "&dhint=" + dhint.replace(' ', '+').replace("'",'%5C%27'),true);
                 xmlhttp.send();
                 
             }
@@ -92,7 +92,7 @@
                         activateAnswer();
                     }
                 };
-                xmlhttp.open("GET","PHP/addAnswer.php?description=" + description.replace(' ', '+') + "&fweight=" + fweight + "&dweight=" + dweigth + "&lang=" + lang.replace(' ', '+') + "&cat=" + cat.replace(' ', '+') ,true);
+                xmlhttp.open("GET","PHP/addAnswer.php?description=" + description.replace(' ', '+').replace("'",'%5C%27') + "&fweight=" + fweight + "&dweight=" + dweigth + "&lang=" + lang.replace(' ', '+').replace("'",'%5C%27') + "&cat=" + cat.replace(' ', '+').replace("'",'%5C%27') ,true);
                 xmlhttp.send();
                 
             }

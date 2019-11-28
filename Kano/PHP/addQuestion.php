@@ -11,7 +11,8 @@
     connect();
     $exec = insertQuestion($functional, $fhint, $disfunctional, $dhint,$language, $category, $subcategory);
     closeConnection();
-    
+
+
     if($exec){
         echo "Correct";
     }else{
